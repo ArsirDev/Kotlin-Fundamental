@@ -14,11 +14,12 @@ internal class ExerciseTwo {
          * Contoh penggunaan tipe data Byte.
          * Byte memiliki ukuran 8-bit dan rentang nilai dari -128 hingga 127.
          */
-        fun exampleByte() {
-            val minByteValue: Byte = Byte.MIN_VALUE
-            val maxByteValue: Byte = Byte.MAX_VALUE
-            println("Min Byte Value: $minByteValue")
-            println("Max Byte Value: $maxByteValue")
+        fun exampleByte(
+            byteValue: Byte = Byte.MIN_VALUE,
+        ): Byte {
+            return byteValue.also { value ->
+                println("Byte Value: $value")
+            }
         }
 
         /**
@@ -26,11 +27,11 @@ internal class ExerciseTwo {
          * Short memiliki ukuran 16-bit dan rentang nilai dari -32768 hingga 32767.
          */
         fun exampleShort(
-            minShortValue: Short = Short.MIN_VALUE,
-            maxShortValue: Short = Short.MAX_VALUE
-        ) {
-            println("Min Short Value: $minShortValue")
-            println("Max Short Value: $maxShortValue")
+            shortValue: Short = Short.MIN_VALUE,
+        ): Short {
+            return shortValue.also { value ->
+                println("Short Value: $value")
+            }
         }
 
         /**
@@ -38,11 +39,11 @@ internal class ExerciseTwo {
          * Int memiliki ukuran 32-bit dan rentang nilai dari -2147483648 hingga 2147483647.
          */
         fun exampleInt(
-            minIntValue: Int = Int.MIN_VALUE,
-            maxIntValue: Int = Int.MAX_VALUE
-        ) {
-            println("Min Int Value: $minIntValue")
-            println("Max Int Value: $maxIntValue")
+            intValue: Int = Int.MIN_VALUE,
+        ): Int {
+            return intValue.also { value ->
+                println("Int Value: $value")
+            }
         }
 
         /**
@@ -50,11 +51,11 @@ internal class ExerciseTwo {
          * Long memiliki ukuran 64-bit dan rentang nilai dari -9223372036854775808 hingga 9223372036854775807.
          */
         fun exampleLong(
-            minLongValue: Long = Long.MIN_VALUE,
-            maxLongValue: Long = Long.MAX_VALUE
-        ) {
-            println("Min Long Value: $minLongValue")
-            println("Max Long Value: $maxLongValue")
+            longValue: Long = Long.MIN_VALUE,
+        ): Long {
+            return longValue.also { value ->
+                println("Long Value: $value")
+            }
         }
 
         /**
@@ -62,11 +63,11 @@ internal class ExerciseTwo {
          * Float memiliki ukuran 32-bit dan digunakan untuk menyimpan nilai desimal dengan presisi tunggal.
          */
         fun exampleFloat(
-            minFloatValue: Float = Float.MIN_VALUE,
-            maxFloatValue: Float = Float.MAX_VALUE
-        ) {
-            println("Min Float Value: $minFloatValue")
-            println("Max Float Value: $maxFloatValue")
+            floatValue: Float = Float.MIN_VALUE,
+        ): Float {
+            return floatValue.also { value ->
+                println("Float Value: $value")
+            }
         }
 
         /**
@@ -74,11 +75,11 @@ internal class ExerciseTwo {
          * Double memiliki ukuran 64-bit dan digunakan untuk menyimpan nilai desimal dengan presisi ganda.
          */
         fun exampleDouble(
-            minDoubleValue: Double = Double.MIN_VALUE,
-            maxDoubleValue: Double = Double.MAX_VALUE
-        ) {
-            println("Min Double Value: $minDoubleValue")
-            println("Max Double Value: $maxDoubleValue")
+            doubleValue: Double = Double.MIN_VALUE,
+        ): Double {
+            return doubleValue.also { value ->
+                println("Double Value: $value")
+            }
         }
 
         /**
@@ -86,9 +87,11 @@ internal class ExerciseTwo {
          * Char digunakan untuk menyimpan karakter tunggal seperti huruf, angka, atau simbol.
          */
         fun exampleChar(
-            charValue: Char = 'A'
-        ) {
-            println("Char Value: $charValue")
+            charValue: Char = Char.MIN_VALUE
+        ): Char {
+            return charValue.also { value ->
+                println("Char Value: $value")
+            }
         }
 
         /**
@@ -96,11 +99,11 @@ internal class ExerciseTwo {
          * Boolean memiliki dua nilai: true dan false.
          */
         fun exampleBoolean(
-            booleanValueTrue: Boolean = true,
-            booleanValueFalse: Boolean = false
-        ) {
-            println("Boolean Value (True): $booleanValueTrue")
-            println("Boolean Value (False): $booleanValueFalse")
+            booleanValue: Boolean = true,
+        ): Boolean {
+            return booleanValue.also { value ->
+                println("Boolean Value ($value): $value")
+            }
         }
 
         /**
