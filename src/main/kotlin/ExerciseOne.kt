@@ -1,10 +1,31 @@
-class ExerciseOne {
+/**
+ * Kelas ini berisi metode untuk latihan pertama dalam penggunaan fungsi `print` dan `println` pada Kotlin.
+ * Menyediakan fungsi untuk menampilkan berbagai contoh penggunaan fungsi `print` dan `println`.
+ *
+ * @constructor Membuat objek ExerciseOne.
+ *
+ * @since 1.0
+ * @version 1.0
+ * @author [Arfan Siregar]
+ */
+internal class ExerciseOne {
     companion object {
+        /**
+         * Menampilkan data ke konsol menggunakan fungsi `print` dan `println`.
+         */
         val showingData = showingData()
     }
 }
 
-fun showingData() {
+/**
+ * Fungsi ini digunakan untuk menampilkan data ke konsol menggunakan fungsi `print` dan `println`.
+ *
+ * Fungsi ini mencetak berbagai teks, angka, dan operasi matematika ke konsol,
+ * serta menunjukkan perbedaan antara `print` dan `println`.
+ *
+ * @since 1.0
+ */
+internal fun showingData() {
     // Menggunakan println untuk mencetak teks dan berpindah ke baris baru
     println("Hello, World!")
     println("Selamat datang di belajar Kotlin.")
